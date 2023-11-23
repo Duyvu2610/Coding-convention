@@ -1,38 +1,38 @@
 public class Rectangle implements IShape {
 	// Thuoc tinh
-	 double a;
-	 double b;
+	 double height;
+	 double width;
 
 	// Phuong thuc
 	// Ham khoi tao co doi so
-		public Rectangle(double a, double b) {
-			this.a = a;
-			this.b = b;
-		}
-
-	public double getA() {
-		return a;
+	public Rectangle(double height, double width) {
+		this.height = height;
+		this.width = width;
 	}
 
-	public void setA(double a) {
-		this.a = a;
+	public double getWidth() {
+		return width;
 	}
 
-	public double getB() {
-		return b;
+	public void setWidth(double width) {
+		this.width = width;
 	}
 
-	public void setB(double b) {
-		this.b = b;
+	public double getHeight() {
+		return height;
 	}
 
-	@Override
-	public double area() {
-		return a*b;
+	public void setHeight(double height) {
+		this.height = height;
 	}
 
 	@Override
-	public double perimeter() {
-		return (a+ b) * 2;
+	public double calculateArea() {
+		return height * width;
+	}
+
+	@Override
+	public double calculatePerimeter() {
+		return (height + width) * 2;
 	}
 }

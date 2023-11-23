@@ -1,5 +1,5 @@
 public interface IShape {
-	public double area();
+	public double calculateArea();
 
-	public double perimeter();
+	public double calculatePerimeter();
 }

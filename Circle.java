@@ -1,13 +1,22 @@
 public class Circle implements IShape {
 	// Thuoc tinh
 	double r;
-	double pi=3.14;
+	final double PI = 3.14;
 
 
 	// Phuong thuc
 	// Ham khoi tao co doi so
 	public Circle(double r) {
 		this.r = r;
+	}
+	@Override
+	public double calculateArea() {
+		return PI * r * r;
+	}
+
+	@Override
+	public double calculatePerimeter() {
+		return 2 * PI * r;
 	}
 
 	public double getR() {
@@ -19,20 +28,8 @@ public class Circle implements IShape {
 	}
 
 	public double getPi() {
-		return pi;
+		return PI;
 	}
 
-	public void setPi(double pi) {
-		this.pi = pi;
-	}
 
-	@Override
-	public double area() {
-		return pi * r * r;
-	}
-
-	@Override
-	public double perimeter() {
-		return 2 * pi * r;
-	}
 }

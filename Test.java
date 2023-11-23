@@ -6,8 +6,8 @@ public class Test {
 		Circle circle = new Circle(4.5);
 		Rectangle rectangle = new Rectangle(12, 7);
 
-		System.out.println("Chu vi hinh tron la: " + circle.perimeter());
-		System.out.println("Dien tich hinh chu nhat la: " + rectangle.area());
-		System.out.println("Dien tich hinh random ra la: " + randomShap.area());
+		System.out.println("Chu vi hinh tron la: " + circle.calculatePerimeter());
+		System.out.println("Dien tich hinh chu nhat la: " + rectangle.calculateArea());
+		System.out.println("Dien tich hinh random ra la: " + randomShap.calculateArea());
 	}
 }
