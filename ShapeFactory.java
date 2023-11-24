@@ -1,14 +1,14 @@
 import java.util.Random;
 
 public class ShapeFactory {
-	Random rd = new Random();
+	Random random = new Random();
 
 	public IShape creatShape() {
-		int random= rd.nextInt(100);
-		if (random >= 30 && random < 60) {
-			return new Rectangle(rd.nextDouble(10), rd.nextDouble(10));
+		int randomNumber= random.nextInt(100);
+		if (randomNumber >= 30 && randomNumber < 60) {
+			return new Rectangle(random.nextDouble(10), random.nextDouble(10));
 		} else {
-			return new Circle(rd.nextDouble(10));
+			return new Circle(random.nextDouble(10));
 		}
 
 	}
